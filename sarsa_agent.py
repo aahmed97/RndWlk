@@ -46,9 +46,6 @@ class sarsaAgent(BaseAgent):
         a new episode, pick the first action, don't forget about exploring
         starts
         """
-        # for s in state:
-        #     for a in range(1,min(s,100-s)):
-        #         self.Returns[s][a] = 0
         x = state[0]
         y = state[1]
         prob = np.random.rand()
@@ -135,5 +132,3 @@ class sarsaAgent(BaseAgent):
                     num_str+=x
             self.num_actions = int(num_str)
         return
-
-
